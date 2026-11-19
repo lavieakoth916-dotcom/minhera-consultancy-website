@@ -3,235 +3,311 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>MINHERA CONSULTANCY | Travel & Immigration Services</title>
+<meta name="description" content="MINHERA CONSULTANCY provides visa applications, immigration permits, passport services, relocation and travel support in Kenya.">
+<meta name="theme-color" content="#21150f">
 
-<meta name="description" content="MINHERA CONSULTANCY offers visa applications, passports, permits, relocation and moving services in Nairobi, Kenya.">
+<link rel="icon" href="WhatsApp%20Image%202026-11-19%20at%2009.02.35.jpeg" type="image/jpeg">
 
 <style>
+:root {
+  --brown: #21150f;
+  --brown-light: #39251a;
+  --gold: #c9a45c;
+  --cream: #f6efe3;
+  --white: #fff;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f8f5ef;
-    color: #302017;
-    line-height: 1.7;
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: #29221d;
+  line-height: 1.6;
 }
 
 header {
-    background: #2b170f;
-    color: white;
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
+  background: var(--brown);
+  padding: 14px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .logo {
-    color: #d8ad62;
-    font-size: 27px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.logo span {
-    display: block;
-    font-size: 11px;
-    color: white;
-    letter-spacing: 4px;
-    text-align: center;
+  width: 95px;
+  height: 75px;
+  object-fit: contain;
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 nav a:hover {
-    color: #d8ad62;
+  color: var(--gold);
 }
 
 .hero {
-    background: linear-gradient(120deg, #24130c, #58351f);
-    color: white;
-    text-align: center;
-    padding: 110px 20px;
+  min-height: 540px;
+  background:
+    linear-gradient(90deg, rgba(25,15,10,.92), rgba(25,15,10,.58)),
+    url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=85") center/cover;
+  display: flex;
+  align-items: center;
+  padding: 75px 9%;
+  color: white;
+}
+
+.hero-content {
+  max-width: 680px;
+}
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .hero h1 {
-    font-size: 43px;
-    color: #e2bb77;
-    margin-bottom: 20px;
+  font-family: Georgia, serif;
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.1;
+  margin: 20px 0;
 }
 
 .hero p {
-    max-width: 650px;
-    margin: auto;
-    font-size: 18px;
+  font-size: 17px;
+  max-width: 560px;
+  color: #eee4d8;
+  margin-bottom: 28px;
 }
 
 .btn {
-    display: inline-block;
-    margin-top: 28px;
-    padding: 13px 27px;
-    background: #d8ad62;
-    color: #28170e;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+  display: inline-block;
+  background: var(--gold);
+  color: var(--brown);
+  padding: 13px 24px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 5px 8px 5px 0;
 }
 
-.btn:hover {
-    background: white;
+.btn-outline {
+  border: 1px solid var(--gold);
+  color: white;
+  background: transparent;
 }
 
 section {
-    padding: 70px 8%;
+  padding: 75px 8%;
 }
 
-.section-title {
-    text-align: center;
-    color: #58351f;
-    font-size: 32px;
-    margin-bottom: 15px;
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
 }
 
-.intro {
-    text-align: center;
-    max-width: 750px;
-    margin: auto;
+.section-heading span {
+  color: #9c783e;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
-.services {
-    background: #eee7dc;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
-    margin-top: 35px;
-}
-
-.service-card {
-    background: white;
-    padding: 30px 22px;
-    border-bottom: 4px solid #c99b50;
-    border-radius: 7px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
-}
-
-.service-card h3 {
-    color: #59371f;
-    margin-bottom: 12px;
+.section-heading h2 {
+  font-family: Georgia, serif;
+  color: var(--brown);
+  font-size: 36px;
+  margin-top: 8px;
 }
 
 .about {
-    background: #fff;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
 }
 
-.about p {
-    max-width: 800px;
-    margin: 15px auto;
+.about img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.about h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: var(--brown);
+  margin: 10px 0 18px;
+}
+
+.services {
+  background: #eee4d6;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.service-card {
+  background: white;
+  padding: 28px;
+  border-bottom: 3px solid var(--gold);
+  border-radius: 4px;
+  transition: .25s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card .number {
+  color: #ad8848;
+  font-family: Georgia, serif;
+  font-size: 28px;
+}
+
+.service-card h3 {
+  color: var(--brown);
+  margin: 12px 0;
+  font-size: 19px;
 }
 
 .why {
-    background: #382116;
-    color: white;
-    text-align: center;
+  background: var(--brown);
+  color: white;
+  text-align: center;
 }
 
-.why .section-title {
-    color: #e2bb77;
+.why h2 {
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 18px;
 }
 
 .why-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 25px;
-    margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
 }
 
-.why-item {
-    padding: 20px;
-}
-
-.why-item h3 {
-    color: #e2bb77;
-    margin-bottom: 10px;
+.why-grid h3 {
+  color: var(--gold);
+  margin-bottom: 8px;
 }
 
 .contact {
-    text-align: center;
-    background: #f8f5ef;
+  background: white;
 }
 
-.contact-details {
-    max-width: 600px;
-    margin: 30px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
 }
 
-.contact-details p {
-    margin: 12px 0;
+.contact-info {
+  background: var(--brown);
+  color: white;
+  padding: 35px;
+  border-radius: 5px;
 }
 
-.contact-details a {
-    color: #70451f;
-    text-decoration: none;
-    font-weight: bold;
+.contact-info h3 {
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 13px 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-info a {
+  color: white;
+}
+
+.contact-note {
+  padding: 30px;
+  background: var(--cream);
+  border-radius: 5px;
 }
 
 footer {
-    background: #24130c;
-    color: white;
-    text-align: center;
-    padding: 25px 15px;
+  background: #160e0a;
+  color: #d9c9b2;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 13px;
 }
 
-footer span {
-    color: #d8ad62;
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+  background: #25d366;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 15px #0004;
 }
 
-@media(max-width: 600px) {
-    header {
-        justify-content: center;
-        text-align: center;
-    }
+@media(max-width: 800px) {
+  header {
+    justify-content: center;
+  }
+  nav {
+    justify-content: center;
+    gap: 14px;
+  }
+  .about, .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-grid, .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero {
+    min-height: 470px;
+  }
+}
 
-    nav {
-        justify-content: center;
-    }
-
-    .hero {
-        padding: 75px 18px;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .section-title {
-        font-size: 27px;
-    }
+@media(max-width: 520px) {
+  section {
+    padding: 55px 6%;
+  }
+  .service-grid, .why-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-heading h2, .about h2 {
+    font-size: 30px;
+  }
 }
 </style>
 </head>
@@ -239,176 +315,153 @@ footer span {
 <body>
 
 <header>
-    <div class="logo">
-        MINHERA
-        <span>CONSULTANCY</span>
-    </div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <img class="logo"
+       src="WhatsApp%20Image%202026-11-19%20at%2009.02.35.jpeg"
+       alt="MINHERA CONSULTANCY logo">
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
+<main>
 <section class="hero" id="home">
-    <h1>Your Journey, Our Commitment</h1>
-
+  <div class="hero-content">
+    <div class="eyebrow">TRAVEL • IMMIGRATION • RELOCATION</div>
+    <h1>Your Journey.<br>Our Expertise.</h1>
     <p>
-        Welcome to MINHERA CONSULTANCY.
-        Your trusted partner for travel documentation,
-        immigration assistance, permits and relocation services.
+      Professional travel, immigration and relocation assistance
+      designed to make your next move easier.
     </p>
-
-    <a class="btn" href="https://wa.me/254798019775">
-        TALK TO OUR TEAM
-    </a>
+    <a class="btn" href="#services">Explore Our Services</a>
+    <a class="btn btn-outline" href="https://wa.me/254798019775">Talk to Us</a>
+  </div>
 </section>
 
-<section id="about" class="about">
-    <h2 class="section-title">About MINHERA</h2>
-
-    <p>
-        MINHERA CONSULTANCY is a Nairobi-based consultancy
-        dedicated to helping individuals and businesses
-        navigate travel documentation and relocation needs.
-    </p>
-
-    <p>
-        We believe in professional service, accountability,
-        reliability and making your journey easier.
-        Our commitment is to provide assistance with care
-        and attention to every client.
-    </p>
-</section>
-
-<section id="services" class="services">
-    <h2 class="section-title">Our Services</h2>
-
-    <p class="intro">
-        Explore our range of consultancy and support services.
-        We are ready to assist you with your next step.
-    </p>
-
-    <div class="service-grid">
-
-        <div class="service-card">
-            <h3>Visa Applications</h3>
-            <p>
-                Assistance with visa application processes
-                and travel documentation for different destinations.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Immigration Permits</h3>
-            <p>
-                Guidance and assistance with different
-                immigration permit applications and requirements.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Passport Services</h3>
-            <p>
-                Support and guidance with passport
-                application and documentation processes.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Yellow Fever Certificates</h3>
-            <p>
-                Guidance on yellow fever vaccination
-                certification requirements for travellers.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Moving & Relocation</h3>
-            <p>
-                Assistance with moving and relocation
-                arrangements to make transitions easier.
-            </p>
-        </div>
-
-        <div class="service-card">
-            <h3>Home Decor</h3>
-            <p>
-                Explore our home decor services and
-                solutions for beautiful living spaces.
-            </p>
-        </div>
-
+<section id="about">
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1000&q=85"
+         alt="Airplane flying above the clouds">
+    <div>
+      <div class="eyebrow">WHO WE ARE</div>
+      <h2>Welcome to MINHERA CONSULTANCY</h2>
+      <p>
+        MINHERA CONSULTANCY is committed to providing reliable,
+        professional and accountable travel and immigration support.
+      </p>
+      <p>
+        We help individuals and businesses navigate travel documentation,
+        immigration processes and relocation needs with confidence.
+      </p>
     </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-heading">
+    <span>WHAT WE DO</span>
+    <h2>Our Services</h2>
+    <p>Practical support for your travel and relocation needs.</p>
+  </div>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <div class="number">01</div>
+      <h3>Visa Applications</h3>
+      <p>Guidance and assistance with visa application processes for different destinations.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="number">02</div>
+      <h3>Immigration Permits</h3>
+      <p>Support with immigration permit applications and related documentation.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="number">03</div>
+      <h3>Passport Services</h3>
+      <p>Assistance and guidance on passport application and renewal processes.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="number">04</div>
+      <h3>Yellow Fever Certificates</h3>
+      <p>Guidance on yellow fever vaccination documentation and travel requirements.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="number">05</div>
+      <h3>Moving & Relocation</h3>
+      <p>Practical assistance for individuals and families planning a move.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="number">06</div>
+      <h3>Home Decor</h3>
+      <p>Home decor solutions to help create comfortable and beautiful spaces.</p>
+    </div>
+  </div>
 </section>
 
 <section class="why">
-    <h2 class="section-title">Why Choose MINHERA?</h2>
-
-    <div class="why-grid">
-
-        <div class="why-item">
-            <h3>Reliable</h3>
-            <p>We value dependable and professional service.</p>
-        </div>
-
-        <div class="why-item">
-            <h3>Accountable</h3>
-            <p>We believe in transparency and responsibility.</p>
-        </div>
-
-        <div class="why-item">
-            <h3>Affordable</h3>
-            <p>We aim to provide accessible service options.</p>
-        </div>
-
-        <div class="why-item">
-            <h3>Professional</h3>
-            <p>Every client deserves attention and respect.</p>
-        </div>
-
+  <h2>Why Choose MINHERA?</h2>
+  <p>Your plans deserve professional attention and dependable support.</p>
+  <div class="why-grid">
+    <div>
+      <h3>Reliable</h3>
+      <p>We take your needs seriously and communicate clearly.</p>
     </div>
+    <div>
+      <h3>Accountable</h3>
+      <p>We value transparency throughout the process.</p>
+    </div>
+    <div>
+      <h3>Client Focused</h3>
+      <p>We work to make your experience straightforward and convenient.</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-    <h2 class="section-title">Get In Touch</h2>
+<section class="contact" id="contact">
+  <div class="section-heading">
+    <span>GET IN TOUCH</span>
+    <h2>Let's Plan Your Next Move</h2>
+  </div>
 
-    <p class="intro">
-        Have a question or need assistance?
-        Contact our team today.
-    </p>
-
-    <div class="contact-details">
-
-        <p><strong>Company:</strong> MINHERA CONSULTANCY</p>
-
-        <p><strong>Phone:</strong>
-        <a href="tel:+254798019775">+254 798 019 775</a></p>
-
-        <p><strong>Email:</strong>
-        <a href="mailto:minhera68@gmail.com">
-        minhera68@gmail.com</a></p>
-
-        <p><strong>Location:</strong>
-        Pioneer Sirona House, Koinange Street, Nairobi, Kenya</p>
-
-        <p><strong>Instagram:</strong>
-        <a href="https://www.instagram.com/minhera_consultancy/"
-        target="_blank">MINHERA CONSULTANCY</a></p>
-
-        <a class="btn" href="https://wa.me/254798019775">
-            CHAT WITH US ON WHATSAPP
-        </a>
-
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>MINHERA CONSULTANCY</h3>
+      <p><strong>Phone:</strong> <a href="tel:+254798019775">+254 798 019 775</a></p>
+      <p><strong>Email:</strong> <a href="mailto:minhera68@gmail.com">minhera68@gmail.com</a></p>
+      <p><strong>Office:</strong> Pioneer Sirona House, Koinange Street, Nairobi, Kenya</p>
+      <p><strong>Instagram:</strong>
+        <a href="https://www.instagram.com/minhera_consultancy/" target="_blank">minhera_consultancy</a>
+      </p>
     </div>
+
+    <div class="contact-note">
+      <h3>We're Ready to Assist</h3>
+      <p>
+        Have a question about visas, permits, passports or relocation?
+        Reach out to our team and let us help you understand your next steps.
+      </p>
+      <br>
+      <a class="btn" href="https://wa.me/254798019775">Send a WhatsApp Enquiry</a>
+    </div>
+  </div>
 </section>
+</main>
 
 <footer>
-    <p>© 2026 <span>MINHERA CONSULTANCY</span>. All Rights Reserved.</p>
-    <p>Your Journey, Our Commitment.</p>
+  <p>© 2026 MINHERA CONSULTANCY. All Rights Reserved.</p>
+  <p>Travel • Immigration • Relocation</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/254798019775" target="_blank">
+  WhatsApp Us
+</a>
 
 </body>
 </html>
